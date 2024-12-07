@@ -2,11 +2,61 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: aliceblue;
 }
 /*  body styling  */
 body {
     min-height: 900px;
     background-color: #000000;
     padding: 0 48px;
+
+}
+.nav_bar {
+    display: flex;
+    height: 96px;
+    justify-content: center;
+    padding-top: 24px;
+    gap: 8px;
+
+}
+.nav_box {
+    height: 72px;
+    width: 1080px;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(146, 141, 211, 0.6);
+    border-radius: 16px;
+
+}
+.nav_links {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+.nav_links a {
+    width: 47px;
+    text-decoration: none;
+    font-family: Archivo;
+    font-size: 17px;
+    font-weight: 500;
+}
+.social {
+    height: 24px;
+    width: 61px;
+    text-decoration: none;
+    font-family: Archivo;
+    font-size: 17px;
+    font-weight: 500;
+}
+.main_heading {
+    width: 217px;
+    font-family: MuseoModerno;
+    font-size: 42px;
+    font-weight: 500;
+    
 
 }
