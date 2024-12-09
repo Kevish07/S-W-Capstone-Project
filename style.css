@@ -13,11 +13,8 @@
 
 }
 .all_over {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
     min-height: 900px;
-    padding: 0 48px;
+    /* padding: 0 48px; */
     background-color: #000000;
     
 }
@@ -60,20 +57,19 @@ header {
 }
 /*  */
 .wrapper {
-    padding: 48px 0;
+    padding: 25px 0 0 0;
 }
 .hero {
     height: 888px;
     /* border-bottom: 1px solid; */
-    padding-bottom: 48px;
+    /* padding-bottom: 48px; */
     text-align: center;
 }
 .content {
-    padding: 72px 0 0 0;
+    /* padding: 72px 0 0 0; */
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(146, 141, 211, 0) 0%, rgba(146, 141, 211, 0.3) 100%);
-    border-bottom: 1px solid;
     overflow: hidden;
 }
 .welcome {
@@ -86,5 +82,245 @@ header {
 .content img{
     width: auto;
     height: 86%;
+
+}
+/*  */
+/*  */
+/*  */
+.text {
+    height: 352px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 72px 0;
+}
+.para {
+    width: 900px;
+    height: 208px;
+    font-family: Chivo;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+
+}
+.grid {
+    width: 1,344px;
+    padding: 48px 0;
+    display: flex;
+    /* gap: 48px; */
+    justify-content: space-evenly;
+}
+.c1,.c2, .c3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.pic2 {
+    width: 100%;
+    height: 323px;
+}
+.h1 {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 500;
+}
+.h2 {
+    font-family: Archivo;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FFFFFF99;
+}
+.pic3 {
+    width: 100%;
+    height: 234px;
+
+}
+.pic4 {
+    width: 100%;
+    height: 416px;
+
+}
+.pic5 {
+    width: 100%;
+    height: 416px;
+
+}
+.pic6 {
+    width: 100%;
+    height: 323px;
+
+}
+.pic7 {
+    width: 100%;
+    height: 234px;
+
+}
+.pic8 {
+    width: 100%;
+    height: 234px;
+
+}
+.pic9 {
+    width: 100%;
+    height: 416px;
+
+}
+.pic10 {
+    width: 100%;
+    height: 323px;
+}
+
+.last_content {
+    height: 364px;
+    padding: 48px 0;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* overflow: hidden; */
+
+}
+.last_content h2 {
+    font-family: Chivo;
+    font-size: 48px;
+    font-weight: 900;
+}
+.testi {
+    height: 168px;
+    display: flex;
+    gap: 24px;
+
+}
+.card {
+    /* width: 288px; */
+    height: 168px;
+    padding: 24px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    width: 240px;
+    height: 48px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+.intro img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.job {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-family: Archivo;
+    font-size: 15px;
+    font-weight: 800;
+    
+}
+.work {
+    font-family: Archivo;
+    font-size: 15px;
+    font-weight: 500;
+    color: #FFFFFF99;
+}
+.desc {
+    width: 240px;
+    height: 56px;
+    padding: 0px 0px 8px 0px;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line .div {
+    width: 0px;
+    height: 48px;
+    border-radius: 1px;
+    border: 1px solid #FFFFFF29;
+
+}
+.divider {
+    width: 100vw;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+
+
+/*  */
+/* FOOTER */
+/*  */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot_div {
+    padding-top: 24px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot_div span{
+    font-family: Chivo;
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFFFFF99;
+
+
+}
+.foot_div button {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #000000;
+
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #FFFFFF29;
+
+    cursor: pointer;
+
 
 }
