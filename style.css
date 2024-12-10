@@ -18,7 +18,7 @@
 /* ABOVE BODY CONTAINER */
 
 .all_over {
-    min-height: 900px;
+    min-height: 200vh;
     /* padding: 0 48px; */
     background-color: #000000;
     
@@ -28,51 +28,55 @@
 
 header {
     width: 100%;
-    height: 96px;
+    height: 6rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-
+nav {
+    width: 70%;
+    min-width: fit-content;
+}
 .nav_box {
     display: flex;
-    width: 1080px;
-    height: 72px;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: rgba(146, 141, 211, 0.1);
-    margin-top: 24px;
-    border-radius: 16px;
-    padding: 24px 32px;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 0.4rem 2rem;
 }
 .nav_links {
-    height: 24px;
-    font-size: 17px;
+    /* height: 24px; */
+    font-size: 1.1em;
     font-family: Archivo;
     display: flex;
-    gap: 32px;
+    gap: 2rem;
 }
 .social {
-    height: 24px;
-    font-size: 17px;
+    font-size: 1.1em;
     font-family: Archivo;
 }
 .main_heading {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-family: MuseoModerno;
-    font-weight: normal;
-    gap: 12px;
+    font-weight: 500;
+    position: relative;
+    left: -5%;
+    z-index: 1;
+    /* gap: 12px; */
 }
 
 /* HERO SECTION */
 
 .wrapper {
-    padding: 25px 0 0 0;
+    margin: 7rem 0 0 0;
 }
 .hero {
-    height: 888px;
-    /* border-bottom: 1px solid; */
-    /* padding-bottom: 48px; */
+    min-height: 79vh;
     text-align: center;
 }
 .content {
@@ -84,15 +88,13 @@ header {
 }
 .welcome {
     font-family: Chivo;
-    height: 120px;
-    font-size: 120px;
-    font-weight: 900;
+    font-size: 9rem;
+    font-weight: 800;
     text-align: center;
 }
 .content img{
-    width: auto;
-    height: 86%;
-
+    width: 65%;
+    height: 100%;
 }
 
 /* PARAGRAPH STYLING --- BELOW HERO SECTION */
