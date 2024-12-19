@@ -18,7 +18,6 @@
 /* ABOVE BODY CONTAINER */
 
 .all_over {
-    min-height: 200vh;
     /* padding: 0 48px; */
     background-color: #000000;
     
@@ -49,6 +48,11 @@ nav {
     border-radius: 1rem;
     padding: 0.4rem 2rem;
 }
+.nav_box .burr {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
 .nav_links {
     /* height: 24px; */
     font-size: 1.1em;
@@ -76,7 +80,6 @@ nav {
     margin: 7rem 0 0 0;
 }
 .hero {
-    min-height: 79vh;
     text-align: center;
     height: fit-content;
 }
@@ -225,7 +228,7 @@ nav {
 /* TESTIMONIAL SECTION */
 
 .last_content {
-    /* height: 23rem; */
+    width: 100%;
     margin: 3rem 0;
     gap: 3rem;
     display: flex;
@@ -233,7 +236,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 .last_content h2 {
@@ -242,12 +245,13 @@ nav {
     font-weight: 900;
 }
 .testi {
-    /* height: 10rem; */
+    padding: 0 3rem;
+    max-width: 100%;
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
+    overflow: auto;
 
 }
 
@@ -255,17 +259,14 @@ nav {
 
 .card {
     max-width: 300px;
-    /* height: 168px; */
     padding: 2rem;
     gap: 1rem;
     border-radius: 1rem;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFFFFF;
     display: flex;
     flex-direction: column;
 }
 .intro {
-    /* width: 240px; */
-    /* height: 48px; */
     gap: 1rem;
     display: flex;
     align-items: center;
@@ -277,33 +278,30 @@ nav {
 }
 .job {
     width: 11rem;
-    /* height: 2.5rem; */
     display: flex;
     flex-direction: column;
 }
 .name {
     font-family: Archivo;
     font-size: 1rem;
-    font-weight: 800;
-    
+    font-weight: 800;     
 }
 .work {
     font-family: Archivo;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 500;    
     color: #FFFFFF99;
 }
+.work_text {
+    width: 78%;
+}
 .work_text span {
-    font-family: Archivo;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #ffffffd3;
+    font-family: Newsreader;
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 .desc {
     width: 100%;
-    /* height: 56px; */
-    /* padding: 0px 0px 8px 0px; */
-    /* gap: 0.8rem; */
     display: flex;
     align-items: center;
 }
@@ -319,9 +317,11 @@ nav {
     height: 48px;
     border-radius: 1px;
     border: 1px solid #FFFFFF29;
-
 }
-
+.desc {
+    display: flex;
+    justify-content: space-between;
+}
 /* BORER BOTTOM */
 
 .divider {
@@ -336,41 +336,98 @@ nav {
 /* FOOTER */
 /*  */
 footer {
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .foot_div {
-    padding-top: 24px;
-    width: 70%;
+    padding: 8rem 0 1rem 0;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .foot_div span{
     font-family: Chivo;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
     color: #FFFFFF99;
-
-
 }
 
 /* FOOTER BUTTON */
 
 .foot_div button {
     font-family: Archivo;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #FFFFFF;
     background-color: #000000;
 
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
     border: 1px solid #FFFFFF29;
 
     cursor: pointer;
+}
 
-
+@media (max-width: 768px) {
+    .nav_links {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .nav_box .burr {
+        display: inline-block;
+    }
+    .main_heading {
+        left: 0;
+    }
+    .welcome {
+        font-size: 5rem;
+    }
+    .text .para {
+        font-size: 2rem;
+    }
+    .foot_div {
+        padding: 3rem 0;
+    }
+}
+@media (max-width: 425px) {
+    .main_heading{
+        font-size: 1.75rem;
+    }
+    .welcome {
+        font-size: 2rem;
+    }
+    .text .para {
+        font-size: 1rem;
+    }
+    .last_content h2 {
+        font-size: 2rem;
+    }
+    .foot_div {
+        padding: 1rem 0;
+    }
+    .foot_div span {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 320px) {
+    .wrapper {
+        margin: 3rem 0;
+    }
+    .main_heading {
+        font-size: 1.5rem;
+    }
+    .nav_box {
+        width: 100%;
+        padding: 0.4rem 0.8rem;
+        margin: 0;
+    }
+    .nav_box .burr {
+        width: 35px;
+        height: 35px;
+    }
 }
